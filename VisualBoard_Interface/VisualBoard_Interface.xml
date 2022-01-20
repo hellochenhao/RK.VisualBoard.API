@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisualBoard_Interface</name>
+    </assembly>
+    <members>
+        <member name="P:VisualBoard_Interface.Common.CoreDateTimeConverter.DateTimeFormat">
+            <summary>
+            获取或设置DateTime格式
+            <para>默认为: yyyy-MM-dd HH:mm:ss</para>
+            </summary>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.B2CStatementController">
+            <summary>
+            B2C报表
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.B2CStatementController.ShowB2CStatement(VisualBoard.Models.Request.B2CStatementObject)">
+            <summary>
+            查询B2C报表数据
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.B2CStatementController.SelectList(System.String)">
+            <summary>
+            下拉列表数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.B2CStatementController.SelectProject(VisualBoard.Models.Request.B2CStatementObject)">
+            <summary>
+            项目模糊搜索
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.B2CStatementController.DCComplaintInfo(VisualBoard.Models.Request.B2CStatementObject)">
+            <summary>
+            导出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.CustomerController">
+            <summary>
+            顾客信息控制器
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.CustomerController.InsterCustomer(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Customer)">
+            <summary>
+            添加客户信息
+            </summary>
+            <param name="_Customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.CustomerController.UpdateCustomer(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Customer)">
+            <summary>
+            修改客户信息
+            </summary>
+            <param name="_Customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.CustomerController.SelectOneCustomer(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Customer)">
+            <summary>
+            查询一条客户信息
+            </summary>
+            <param name="_Customer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.CustomerController.SelectListCustomer(VisualBoard.Models.Request.CustmoerSearchObject)">
+            <summary>
+            查询客户信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.CustomerController.DelCustomer(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Customer)">
+            <summary>
+            删除客户信息
+            </summary>
+            <param name="_Customer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.ExpressController">
+            <summary>
+            猪猪快递云控制器
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.ExpressController.MoQiuLliSubscribeCallBack(VisualBoard.Models.MoQiuLiObject.SubscribeCallBackResult)">
+            <summary>
+            墨丘利批量轨迹订阅后，接受墨丘利推送消息的回调接口
+            </summary>
+            <param name="baseResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.ExpressController.RptRunningDaily(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            每日运作报表
+            </summary>
+            <param name="indexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.LoginController">
+            <summary>
+            小程序用户登录控制器
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.LoginController.LoginsUser(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_User)">
+            <summary>
+            小程序用户登录
+            </summary>
+            <param name="_User"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.LoginController.AddUserInfo(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_User)">
+            <summary>
+            临时用户添加信息
+            </summary>
+            <param name="_User"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.OrderController">
+            <summary>
+            订单信息控制器
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.SelectOrder(System.String,System.Nullable{System.Int32})">
+            <summary>
+            判断订单完成状态
+            </summary>
+            <param name="WavePick"></param>
+            <param name="TypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.InsterCustomer(VisualBoard.Models.Request.OrderObject)">
+            <summary>
+            订单信息录入
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.PickingOrder(VisualBoard.Models.Request.OrderObject)">
+            <summary>
+            拣货、复核、打包、MPS分拣、二次分拣、发运、上架、属性变更
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.SelectAllOrderInfo(System.String,System.String,System.Int32)">
+            <summary>
+            记录
+            </summary>
+            <param name="UserID"></param>
+            <param name="WavePick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.SelectCheckOrder(System.String)">
+            <summary>
+            抽检查询订单信息
+            </summary>
+            <param name="WavePick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.CheckOrder(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.acc_WavePickDetails)">
+            <summary>
+            抽检
+            </summary>
+            <param name="_WavePickDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.Sealing(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.acc_WavePickDetails)">
+            <summary>
+            封箱
+            </summary>
+            <param name="_WavePickDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.Attribute(System.String)">
+            <summary>
+            属性变更查询信息
+            </summary>
+            <param name="WavePick"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.SelectOrderType">
+            <summary>
+            订单类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.EndOrder(VisualBoard.Models.Response.EndObject)">
+            <summary>
+            强制完结查询信息
+            </summary>
+            <param name="end"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.QEndOder(VisualBoard.Models.Request.OrderObject)">
+            <summary>
+            强制完结订单
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.SeeOrder">
+            <summary>
+            看板下拉列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.PieMap(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            看板饼图
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrderController.NumberCount1(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            看板柱状图
+            </summary>
+            <param name="indexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.OrganizationController">
+            <summary>
+            机构
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.InsterOrganization(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Organization)">
+            <summary>
+            新增机构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.UpdateOrganization(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Organization)">
+            <summary>
+            修改机构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.BatDelOrganization(VisualBoard.Models.Request.DelOrganObject)">
+            <summary>
+            批量作废机构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.SelectOneOrganization(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Organization)">
+            <summary>
+            查询一条机构信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.SelectListOrganization(VisualBoard.Models.Request.OrganSearchObject)">
+            <summary>
+            查询机构信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.GetTreeOrganization">
+            <summary>
+            查询机构树形结构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.GetTreeOrganAndCustomer">
+            <summary>
+            查询机构和客户树形结构
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.OrganizationController.GetCustomerForOrgan(System.Int32)">
+            <summary>
+            根据机构获取客户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.PubController.GetIDreplaceList(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.pub_Idreplace)">
+            <summary>
+            获取映射关系表
+            </summary>
+            <param name="_Idreplace"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.UserController">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.login(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_User)">
+            <summary>
+            登陆
+            </summary>
+            <param name="_User"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.InsterUser(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_User)">
+            <summary>
+            新增用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.UpdateUser(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_User)">
+            <summary>
+            修改用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.SelectOneUser(VisualBoard.Models.Request.Userobj)">
+            <summary>
+            查询一条用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.SelectListUser(VisualBoard.Models.Request.Userobj)">
+            <summary>
+            查询用户信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.GetAppMenuList">
+            <summary>
+            获取App菜单列表
+            </summary>
+            <param name="_User"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.GetPCMenuList">
+            <summary>
+            获取PC菜单列表
+            </summary>
+            <param name="_User"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.GetAppMenuRole(System.Int32)">
+            <summary>
+            获得App菜单权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.InsertRole(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Role)">
+            <summary>
+            新增权限
+            </summary>
+            <param name="_Role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.UpdateRole(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Role)">
+            <summary>
+            修改权限
+            </summary>
+            <param name="_Role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.SearchListRole(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Role)">
+            <summary>
+            查询权限列表
+            </summary>
+            <param name="_Role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.UserController.SearchOneRole(Rokin.EFCore.WMS_VisualBoard.WMS_Visualboard.bsc_Role)">
+            <summary>
+            查询一条权限记录
+            </summary>
+            <param name="_Role"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VisualBoard_Interface.Controllers.WarehouseController">
+            <summary>
+            仓储可视化PC后端BI数据展示
+            </summary>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetWarehouseIndex(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            首页
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetSaleOrder(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            大促看板
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetCompanyOrder(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            分公司看板
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetSceneOrder(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            现场看板
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetExpressRoute(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            快递路由报表
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.RptExpressRouteDetails(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            快递路由报表-带有详细路由信息
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.RptExpressRouteBigClassCount(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            快递路由报表-各个大类分类状态下的订单数量
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetExpressCompany">
+            <summary>
+            获取快递公司列表
+            </summary>
+            <param></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetSourcePlatform">
+            <summary>
+            获取欧莱雅来源平台列表
+            </summary>
+            <param></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetHuoZhu">
+            <summary>
+            获取欧莱雅货主列表
+            </summary>
+            <param></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetStoreName">
+            <summary>
+            获取欧莱雅店铺名称列表
+            </summary>
+            <param></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetSaleOrderV2(VisualBoard.Models.Request.IndexQueryObject)">
+            <summary>
+            大促看板V2
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.RptOrder(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            订单报表
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.RptOrdeStatusCount(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            订单报表-各个状态下的订单数量
+            </summary>
+            <param name="IndexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.RptOrderExecl(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            订单报表导出2
+            </summary>
+            <param name="indexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.ExpressRouteExecl(VisualBoard.Models.Request.SelectRouteObject)">
+            <summary>
+            快递路由报表导出2
+            </summary>
+            <param name="indexQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VisualBoard_Interface.Controllers.WarehouseController.GetDownloads(VisualBoard.Models.Request.FileUploadInfoSearchObject)">
+            <summary>
+            下载列表
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

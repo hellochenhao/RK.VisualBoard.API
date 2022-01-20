@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="5.1.0" />
+    <PackageReference Include="Rokin.Common.Redis" Version="1.0.3" />
+    <PackageReference Include="Rokin.Dapper" Version="2.0.4" />
+    <PackageReference Include="Rokin.EFCore.WMS_VisualBoard" Version="1.0.29" />
+    <PackageReference Include="Rokin.EFCore.VIPBI" Version="1.0.26" />
+    <PackageReference Include="runtime.win-x64.runtime.native.System.Data.SqlClient.sni" Version="4.4.0" />
+  </ItemGroup>
+</Project>

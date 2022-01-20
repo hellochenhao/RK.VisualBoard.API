@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.3" />
+    <PackageReference Include="FluentFTP" Version="35.0.5" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="NPOI" Version="2.5.4" />
+    <PackageReference Include="NPOI.OOXML.dll" Version="2.0.6" />
+    <PackageReference Include="NPOI.OpenXml4Net.dll" Version="2.0.6" />
+    <PackageReference Include="NPOI.OpenXmlFormats.dll" Version="2.0.6" />
+    <PackageReference Include="Rokin.Common.MongoDB" Version="1.0.0" />
+    <PackageReference Include="Rokin.Common.RabbitMQ" Version="1.0.7" />
+    <PackageReference Include="Rokin.Common.Tools" Version="1.0.8" />
+    <PackageReference Include="System.Xml.XDocument" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessInterface\VisualBoard.Business.Interface\VisualBoard.Business.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

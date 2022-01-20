@@ -1,0 +1,15 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /usr/share/zoneinfo/Asia/Beijing
+ENV ASPNETCORE_URLS http://*:5003
+RUN sed -i 's/TLSv1.2/TLSv1.0/g' /etc/ssl/openssl.cnf
+RUN apt-get update && apt-get install -y libgdiplus libc6-dev && ln -s /usr/lib/libgdiplus.so /usr/lib/gdiplus.dll
+
+COPY . /app
+WORKDIR /app
+ENTRYPOINT ["dotnet", "VisualBoard_Interface.dll"]
